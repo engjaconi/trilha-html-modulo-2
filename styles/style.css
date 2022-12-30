@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+:root {
+    --cinzaEscuro: #737373;
+    --cinzaClaro: #A6A6A6;
+    --branco: #F2F2F2;
+    --marron: #B57E7E;
+    --rosa: #F2AAAA;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--rosa);
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    min-height: 150px;
+    color: var(--marron);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.368);
+    background-image: url('../images/capa-home.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: 50%;
+}
+
+header#header-sobre {
+    background-image: url('../images/exame-ocular.jpg');
+}
+
+header#header-horario {
+    background-image: url('../images/doutor.jpg');
+}
+
+header#header-contato {
+    background-image: url('../images/equipamento-exame.jpg');
+}
+
+header > .transparencia {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    min-height: 100px;
+    background-color: #B57E7Ee0;
+}
+
+header > img {
+    position: absolute;
+    z-index: 2;
+    width: 48px;
+    margin: 10px;
+}
+
+header > h1, header > p {
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    color: var(--branco)
+}
+
+header > p {
+    top: 90px;
+}
+
+div.container {
+    display: flex;
+}
+
+nav {
+    width: 100px;
+    background-color: var(--branco);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.368);
+    border-radius: 0 5px 5px 0;
+}
+
+nav > ul > li {
+    height: 25px;
+    padding-top: 5px;
+    border-bottom: 1px solid #7373732F;
+}
+
+nav > ul > li > a {
+    width: 100%;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--marron);
+} 
+
+nav > ul > li > a:hover {
+    color: var(--rosa);
+}
+
+main {
+    width: 100%;
+    margin: 5px;
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+main > section > h2 {
+    margin: 10px;
+    font-size: 1.5em;
+    color: var(--marron);
+    margin: 30px;
+}
+
+main > section > p {
+    color: var(--cinzaEscuro);
+    text-align: justify;
+    margin: 20px;
+    text-indent: 15px;
+}
+
+main > section > p > span.destaque {
+    color: var(--marron);
+}
+
+main > section > form {
+    display: flexbox;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+}
+
+main > section > form > fieldset {
+    border: none;
+}
+
+main > section > form > textarea, label {
+    display: block;
+    text-align: start;
+    color: var(--cinzaEscuro);
+    padding: 5px;
+}
+
+main > section > form > fieldset > label > input {
+    width: 99%;
+    height: 20px;
+    color: var(--cinzaEscuro);
+    
+}
+
+main > section > form > fieldset > label > textarea {
+    width: 99%;
+}
+
+main > section > form > button {
+    width: 40%;
+    height: 30px;
+    border: none;
+    background-color: var(--rosa);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.416);
+    color: var(--branco);
+    font-weight: bold;
+}
+
+main > section > form > button:hover {
+    background-color: var(--marron);
+}
+
+main > section > img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+main > section > img#imagem-sobre {
+    width: 60%;
+}
+
+main > section.horario > table, th, td {
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+    padding: 5px;
+    color: var(--cinzaEscuro);
+    border: 1px solid var(--marron);
+}
+
+footer {
+    height: 50px;
+    background-color: var(--marron);
+    box-shadow: 1px 1px 5px #B57E7Ee0;
+    color: var(--branco);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--branco);
+}
